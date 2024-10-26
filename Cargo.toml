@@ -25,6 +25,7 @@ svg = ["iced_graphics/svg", "iced_widget/svg", "iced_renderer/svg"]
 geometry = ["iced_graphics/geometry", "iced_renderer/geometry"]
 web-colors = ["iced_graphics/web-colors", "iced_renderer/web-colors"]
 canvas = ["iced_widget/canvas"]
+opengl = ["baseview/opengl"]
 system = ["dep:sysinfo"]
 trace = []
 

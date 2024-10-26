@@ -55,7 +55,11 @@ where
     fn clone_window_options(window: &WindowOpenOptions) -> WindowOpenOptions {
         WindowOpenOptions {
             title: window.title.clone(),
-            ..*window
+            scale: window.scale,
+            size: window.size,
+
+            #[cfg(feature = "opengl")]
+            gl_config: window.gl_config.clone(),
         }
     }
 

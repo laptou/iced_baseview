@@ -32,6 +32,9 @@ impl Default for Settings {
                 title: String::from("iced_baseview"),
                 size: Size::new(500.0, 300.0),
                 scale: WindowScalePolicy::SystemScaleFactor,
+
+                #[cfg(feature = "opengl")]
+                gl_config: Some(Default::default()),
             },
             iced_baseview: IcedBaseviewSettings::default(),
             graphics_settings: GraphicsSettings::default(),
