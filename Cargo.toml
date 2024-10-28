@@ -27,7 +27,9 @@ web-colors = ["iced_graphics/web-colors", "iced_renderer/web-colors"]
 canvas = ["iced_widget/canvas"]
 opengl = ["baseview/opengl"]
 system = ["dep:sysinfo"]
-trace = []
+trace = ["tracing", "tracing-subscriber"]
+tracing = ["dep:tracing"]
+tracing-subscriber = ["dep:tracing-subscriber"]
 
 [dependencies]
 baseview = { git = "https://github.com/RustAudio/baseview.git", rev = "579130ecb4f9f315ae52190af42f0ea46aeaa4a2" }
@@ -43,3 +45,5 @@ raw-window-handle = "0.5"
 raw-window-handle-06 = { package = "raw-window-handle", version = "0.6" }
 thiserror = "1.0"
 sysinfo = { version = "0.30", optional = true }
+tracing = { version = "0.1.40", optional = true }
+tracing-subscriber = { version = "0.3.18", optional = true }

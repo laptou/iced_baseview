@@ -59,7 +59,7 @@ pub use executor::Executor;
 pub use font::Font;
 pub use position::Position;
 #[cfg(feature = "trace")]
-pub use program::Profiler;
+pub use application::Profiler;
 pub use proxy::Proxy;
 pub use renderer::Renderer;
 pub use settings::{GraphicsSettings, IcedBaseviewSettings, Settings};
